@@ -7,7 +7,10 @@ g4lApp.controller('GroupsController', ['$scope','$http', function ($scope, $http
 }]);
 
 
-g4lApp.controller('AddChallangeController', ['$scope', function ($scope) {
+g4lApp.controller('AddChallangeController', ['$scope','$http', function ($scope, $http) {
+  $http.get('fixtures/challange_templantes.json').success(function(data) {
+  	$scope.challange_templates = data;
+  });
 
 }]);
 

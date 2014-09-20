@@ -51,10 +51,14 @@
 
 <div ng-if="currentPage == 'addChallenge'" ng-controller="AddChallangeController">
 <div class="panel panel-default">
-  <div class="panel-heading">titel!</div>
-  <div class="panel-body">
-    <p>info</p>
-  </div>
+  <div class="panel-heading">Utmaningar för rökare</div>
+<div class="panel panel-default" ng-repeat="template in challange_templates">
+    <div class="panel-heading">{{template.activity.name}}</div>
+     <div class="panel-body">
+      <p>Info</p>
+     </div>
+    </div>
+   </div>
 </div>
 </div>
 
