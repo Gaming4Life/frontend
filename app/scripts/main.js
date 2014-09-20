@@ -13,7 +13,7 @@ g4lApp.controller('AddChallangeController', ['$scope', function ($scope) {
 
 g4lApp.controller('ViewGroupController', ['$scope', '$http', function ($scope, $http) {
   $http.get('fixtures/challanges.json').success(function(data) {
-  	$scope.challanges = data
+  	$scope.challanges = data;
   });
 }]);
 

@@ -61,23 +61,19 @@
 <div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">
  <div class="panel panel-default">
 
-  <div class="panel-heading">Rökare
-	 <p>
-	       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
-      </p>
-</div>
+  <div class="panel-heading">Rökare	 
+	       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i>Add challenge</button>
+      </div>
    <div class="panel panel-default" ng-repeat="challange in challanges">
     <div class="panel-heading">{{challange.name}}</div>
      <div class="panel-body">
       <p>{{challange.description}}</p>
-      
+      <p>Startdatum: {{challange.date}}</p>
+      <p>Hälsopoäng: {{challange.score}}</p>
      </div>
     </div>
    </div>
-
 </div>
-
-
 
 
 </div>

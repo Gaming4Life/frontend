@@ -6,5 +6,13 @@
 		"name": "Prommenera mera!",
 		"description": "Prommenera varje dag, minst 15 minuter.",
 		"score": 200
+	},
+	{
+		"id": 2,
+		"challange_template": 2,
+		"date": "2014-09-15",
+		"name": "Join Non Smoking Generation!",
+		"description": "Gå på alla terapi möten.",
+		"score": 210
 	}	
 ]
