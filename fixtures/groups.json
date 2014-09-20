@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "Rökare",
+		"description": "",
+		"type": "",
+		"people": [
+			{
+      	  		"id": 1,
+        		"first_name": "Kalle",
+        		"last_name": "Andersson"
+    		},
+    		{
+        		"id": 2,
+        		"first_name": "Olle",
+        		"last_name": "Andersson"
+    		},
+    		{
+        		"id": 3,
+        		"first_name": "Bertil",
+        		"last_name": "Andersson"
+    		}]
+	},
+	{
+		"id": 2,
+		"name": "Soffpotatis",
+		"description": "",
+		"type": "",
+		"people": [
+			{
+		        "id": 5,
+		        "first_name": "Kalle",
+		        "last_name": "Svensson"
+		    },
+		    {
+		        "id": 6,
+		        "first_name": "Olle",
+		        "last_name": "Anka"
+		    }
+		]
+	}
+]
