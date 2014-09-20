@@ -1,6 +1,6 @@
 var g4lApp = angular.module('g4lApp', ['ui.bootstrap']);
 
-g4lApp.controller('GroupsController', ['$scope', function ($scope, $http) {
+g4lApp.controller('GroupsController', ['$scope','$http', function ($scope, $http) {
 	$http.get('fixtures/groups.json').success(function(data) {
     	$scope.groups = data;
   });
