@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-controller="MainController">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,11 +32,11 @@
         <h3 class="text-muted">frontend</h3>
       </div>
 
-<div ng-controller="GroupsController">
+<div ng-if="currentPage == 'overview'" ng-controller="GroupsController">
 <div class="panel panel-default" ng-repeat="group in groups">
   <div class="panel-heading">{{group.title}}</div>
   <div class="panel-body">
-    <p>{{group.description}}</p>
+    <p>{{group.description}} <a ng-click="goTo('hej')">hej</a></p>
   </div>
 </div>
 </div>
