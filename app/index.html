@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" ng-app="g4lApp">
+<html class="no-js" ng-app="g4lApp" ng-cloak>
   <head>
     <meta charset="utf-8">
     <title>Gaming 4 Life</title>
@@ -37,7 +37,7 @@
 
 <div ng-if="currentPage == 'overview'" ng-controller="GroupsController">
 <div class="panel panel-default" ng-repeat="group in groups">
-  <div class="panel-heading">{{group.title}}</div>
+  <div class="panel-heading">{{group.name}}</div>
   <div class="panel-body">
     <p>{{group.description}}</p>
     <p>Hälsostatus<span class="badge" style="background-color:red;">Dålig (12 Sjukdagar/år)</span></p>

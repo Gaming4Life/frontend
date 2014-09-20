@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Rökare",
-		"description": "",
+		"description": "Gruppen med rökare.",
 		"type": "",
 		"people": [
 			{
@@ -24,7 +24,7 @@
 	{
 		"id": 2,
 		"name": "Soffpotatis",
-		"description": "",
+		"description": "En grupp med personer som inte rör sig så mycket.",
 		"type": "",
 		"people": [
 			{
