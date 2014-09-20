@@ -46,7 +46,6 @@
        <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
        </p>
   </div>
-  </div>
 </div>
 </div>
 
@@ -56,22 +55,19 @@
   <div class="panel-body">
     <p>info</p>
   </div>
-  </div>
 </div>
 </div>
 
-<div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">hheeeeej
+<div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">
  <div class="panel panel-default">
   <div class="panel-heading">titel! Group Details</div>
-   <div class="panel panel-default" ng-repeat="challange i challenges">
-    <div class="panel-heading">{{challenge.title}}</div>
-     <div class="panel-body">
-      <p>{{challenge.description}}</p>
-      <p>
-       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
-      </p>
-     </div>
-    </div>
+  <div class="panel panel-default" ng-repeat="challange i challenges">
+   <div class="panel-heading">{{challenge.title}}</div>
+   <div class="panel-body">
+    <p>{{challenge.description}}</p>
+    <p>
+     <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
+    </p>
    </div>
   </div>
  </div>
