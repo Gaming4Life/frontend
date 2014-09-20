@@ -29,7 +29,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <h3 class="text-muted">Gaming 4 Life! / {{currentPage}}</h3>
+        <h3 class="text-muted">Gaming 4 Life!</h3>
       </div>
 
 <div>
@@ -52,10 +52,12 @@
 <div ng-if="currentPage == 'addChallenge'" ng-controller="AddChallangeController">
 <div class="panel panel-default">
   <div class="panel-heading">Utmaningar för rökare</div>
-<div class="panel panel-default" ng-repeat="template in challange_templates">
-    <div class="panel-heading">{{template.activity.name}}</div>
+    <div class="panel panel-default" ng-repeat="template in challange_templates">
+    <div class="panel-heading">{{template.name}} 
+       <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Lägg till!</button>
+       </div>
      <div class="panel-body">
-      <p>Info</p>
+      <p>{{template.activity.name}}</p>
      </div>
     </div>
    </div>
