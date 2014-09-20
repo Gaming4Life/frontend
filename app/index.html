@@ -29,7 +29,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <h3 class="text-muted">Gaming 4 Life!</h3>
+        <h3 class="text-muted">Gaming 4 Life! / {{currentPage}}</h3>
       </div>
 
 <div>
@@ -41,7 +41,7 @@
   <div class="panel-body">
     <p>{{group.description}}</p>
     <p>
-       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
+       <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
        </p>
   </div>
   </div>
@@ -58,9 +58,27 @@
 </div>
 </div>
 
-
+<div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">hheeeeej
+ <div class="panel panel-default">
+  <div class="panel-heading">titel! Group Details</div>
+   <div class="panel panel-default" ng-repeat="challange i challenges">
+    <div class="panel-heading">{{challenge.title}}</div>
+     <div class="panel-body">
+      <p>{{challenge.description}}</p>
+      <p>
+       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 </div>
 
+
+
+
+</div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

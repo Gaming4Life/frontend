@@ -7,7 +7,16 @@ g4lApp.controller('GroupsController', ['$scope', function ($scope) {
    ];
 }]);
 
+
 g4lApp.controller('AddChallangeController', ['$scope', function ($scope) {
+
+}]);
+
+g4lApp.controller('ViewGroupController', ['$scope', function ($scope) {
+  $scope.challenges = [
+    {'title': 'Aroma therapy', 'description': '5 Session within one month'},
+    {'title': 'Join Non Sḿoking generation', 'description': 'Get active'}
+   ];
 
 }]);
 
