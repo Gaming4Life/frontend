@@ -32,6 +32,9 @@
         <h3 class="text-muted">frontend</h3>
       </div>
 
+<div>
+
+
 <div ng-if="currentPage == 'overview'" ng-controller="GroupsController">
 <div class="panel panel-default" ng-repeat="group in groups">
   <div class="panel-heading">{{group.title}}</div>
@@ -41,10 +44,22 @@
        <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
        </p>
   </div>
+  </div>
 </div>
 </div>
 
-    </div>
+<div ng-if="currentPage == 'addChallenge'" ng-controller="AddChallangeController">
+<div class="panel panel-default">
+  <div class="panel-heading">titel!</div>
+  <div class="panel-body">
+    <p>info</p>
+  </div>
+  </div>
+</div>
+</div>
+
+
+</div>
 
 
     <!-- build:js(.) scripts/vendor.js -->
