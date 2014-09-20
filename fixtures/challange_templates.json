@@ -1,0 +1,12 @@
+[
+	{
+		"id": 1,
+		"activity": { "id": 2, "name": "Promenad", "intensity": "LOW" },
+		"suitable_group": 2
+	},
+	{
+		"id": 2,
+		"activity": {},
+		"suitable_group": 1
+	}
+]
