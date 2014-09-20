@@ -31,31 +31,15 @@
         </ul>
         <h3 class="text-muted">frontend</h3>
       </div>
-      
 
-
-<tabset>
-    <tab heading="Static title">Static content</tab>
-    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
-      {{tab.content}}
-    </tab>
-    <tab select="alertMe()">
-      <tab-heading>
-        <i class="glyphicon glyphicon-bell"></i> Alert!
-      </tab-heading>
-      I've got an HTML heading, and a select callback. Pretty cool!
-    </tab>
-  </tabset>
-
-
-<ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#">Overview</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Messages</a></li>
-</ul>
-
-
-
+<div ng-controller="GroupsController">
+<div class="panel panel-default" ng-repeat="group in groups">
+  <div class="panel-heading">{{group.title}}</div>
+  <div class="panel-body">
+    <p>{{group.description}}</p>
+  </div>
+</div>
+</div>
 
     </div>
 
