@@ -2,7 +2,8 @@
 	{
 		"id": 1,
 		"activity": { "id": 2, "name": "Promenad", "intensity": "LOW" },
-		"suitable_group": 2
+		"suitable_group": 2,
+		"type": "GOAL",
 	},
 	{
 		"id": 2,
