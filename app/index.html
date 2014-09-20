@@ -40,8 +40,8 @@
   <div class="panel-heading">{{group.name}}</div>
   <div class="panel-body">
     <p>{{group.description}}</p>
-    <p>Hälsostatus<span class="badge" style="background-color:red;">Dålig (12 Sjukdagar/år)</span></p>
-    <p>Hälsoutveckling<span class="badge" style="background-color:green">Bra (-3 Sjukdagar/år)</span></p>
+    <p>Hälsostatus <span class="badge" style="background-color:red;">Dålig (12 Sjukdagar/år)</span></p>
+    <p>Hälsoutveckling <span class="badge" style="background-color:green">Bra (-3 Sjukdagar/år)</span></p>
     <p>
        <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
        </p>
@@ -62,19 +62,20 @@
 
 <div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">
  <div class="panel panel-default">
-  <div class="panel-heading">titel!</div>
-   <div class="panel panel-default" ng-repeat="challange in challenges">
-    <div class="panel-heading">{{challange.title}}</div>
+  <div class="panel-heading">Rökare
+	 <p>
+	       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
+      </p>
+</div>
+   <div class="panel panel-default" ng-repeat="challange in challanges">
+    <div class="panel-heading">{{challange.name}}</div>
      <div class="panel-body">
       <p>{{challange.description}}</p>
-      <p>
-       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
-      </p>
+      
      </div>
     </div>
    </div>
-  </div>
- </div>
+
 </div>
 
 
