@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+angular.module('myModule', ['ui.bootstrap']);

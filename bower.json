@@ -1,7 +1,9 @@
 {
   "name": "frontend",
-  "private": true,
+  "private": false,
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "angular": "1.2.x",
+    "bootstrap": "~3.1.1",
+    "angular-bootstrap": "0.11.0"
   }
 }
