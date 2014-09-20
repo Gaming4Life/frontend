@@ -11,12 +11,10 @@ g4lApp.controller('AddChallangeController', ['$scope', function ($scope) {
 
 }]);
 
-g4lApp.controller('ViewGroupController', ['$scope', function ($scope) {
-  $scope.challenges = [
-    {'title': 'Aroma therapy', 'description': '5 Session within one month'},
-    {'title': 'Join Non Sḿoking generation', 'description': 'Get active'}
-   ];
-
+g4lApp.controller('ViewGroupController', ['$scope', '$http', function ($scope, $http) {
+  $http.get('fixtures/challanges.json').success(function(data) {
+  	$scope.challanges = data
+  });
 }]);
 
 g4lApp.controller('MainController', ['$scope', function ($scope) {
