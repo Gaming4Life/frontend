@@ -25,7 +25,7 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
+		<li><a ng-click="goTo('overview')">Overview</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -36,7 +36,10 @@
 <div class="panel panel-default" ng-repeat="group in groups">
   <div class="panel-heading">{{group.title}}</div>
   <div class="panel-body">
-    <p>{{group.description}} <a ng-click="goTo('hej')">hej</a></p>
+    <p>{{group.description}}</p>
+    <p>
+       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i> Add challenge</button>
+       </p>
   </div>
 </div>
 </div>
