@@ -14,11 +14,6 @@
         		"id": 2,
         		"first_name": "Olle",
         		"last_name": "Andersson"
-    		},
-    		{
-        		"id": 3,
-        		"first_name": "Bertil",
-        		"last_name": "Andersson"
     		}]
 	},
 	{
@@ -27,16 +22,31 @@
 		"description": "En grupp med personer som inte rör sig så mycket.",
 		"type": "",
 		"people": [
+    			{
+        		"id": 3,
+        		"first_name": "Bertil",
+        		"last_name": "Andersson"
+    			},
 			{
 		        "id": 5,
 		        "first_name": "Kalle",
 		        "last_name": "Svensson"
-		    },
-		    {
+		    	},
+		    	{
 		        "id": 6,
 		        "first_name": "Olle",
 		        "last_name": "Anka"
-		    }
+		    	},
+                    	{
+		        "id": 7,
+		        "first_name": "Marcus",
+		        "last_name": "Holgersson"
+		    	},
+                    	{
+		        "id": 8,
+		        "first_name": "Babben",
+		        "last_name": "Larsson"
+		    	}
 		]
 	}
 ]
