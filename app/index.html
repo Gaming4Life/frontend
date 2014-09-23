@@ -9,8 +9,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/united/bootstrap.min.css" rel="stylesheet">
+<!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -43,7 +44,7 @@
     <p>Hälsostatus <span class="badge" style="background-color:red;">Dålig (12 Sjukdagar/år)</span></p>
     <p>Hälsoutveckling <span class="badge" style="background-color:green">Bra (-3 Sjukdagar/år)</span></p>
     <p>
-       <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
+       <button type="button" class="btn-sm btn-primary btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
        </p>
   </div>
 </div>
@@ -54,7 +55,9 @@
   <div class="panel-heading">Utmaningar för rökare</div>
     <div class="panel panel-default" ng-repeat="template in challange_templates">
     <div class="panel-heading">{{template.name}} 
-       <button type="button" class="btn btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Lägg till!</button>
+       <div class="btn-group pull-right">
+       <button type="button" class="btn-sm btn-primary btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Lägg till!</button>
+	</div
        </div>
      <div class="panel-body">
       <p>{{template.activity.name}}</p>
@@ -67,9 +70,11 @@
 <div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">
  <div class="panel panel-default">
 
-  <div class="panel-heading">Rökare	 
-	       <button type="button" class="btn btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i>Add challenge</button>
-      </div>
+  <div class="panel-heading">Rökare
+<div class="btn-group pull-right">
+  <button type="button" class="btn-sm  btn-primary btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i>Add challenge</button>	      
+</div>      
+</div>
    <div class="panel panel-default" ng-repeat="challange in challanges">
     <div class="panel-heading">{{challange.name}}</div>
      <div class="panel-body">
