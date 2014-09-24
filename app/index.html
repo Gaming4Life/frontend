@@ -38,10 +38,10 @@
 
 <div ng-if="currentPage == 'overview'" ng-controller="GroupsController">
 <div class="panel panel-default" ng-repeat="group in groups">
-  <div class="panel-heading">{{group.name}}
+  <div class="panel-heading">{{group.name}} {{group.id}} 
    <div class="btn-group pull-right">
        
-<button type="button" class="btn-sm btn-primary btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
+<button type="button" class="btn-sm btn-primary btnAddChallenge" ng-click="goToViewGroup(group.id)"><i class="glyphicon glyphicon-plus-sign"></i> Group details</button>
 </div>
 </div>
   <div class="panel-body">
@@ -57,7 +57,7 @@
 <div ng-if="currentPage == 'addChallenge'" ng-controller="AddChallangeController">
 <div class="panel panel-default">
   <div class="panel-heading">Utmaningar för rökare</div>
-    <div class="panel panel-default" ng-repeat="template in challange_templates">
+    <div class="panel panel-info" ng-repeat="template in challange_templates">
     <div class="panel-heading">{{template.name}} 
        <div class="btn-group pull-right">
        <button type="button" class="btn-sm btn-primary btnAddChallenge" ng-click="goTo('viewGroup')"><i class="glyphicon glyphicon-plus-sign"></i> Lägg till!</button>
@@ -74,12 +74,12 @@
 <div ng-if="currentPage == 'viewGroup'" ng-controller="ViewGroupController">
  <div class="panel panel-default">
 
-  <div class="panel-heading">Rökare
+  <div class="panel-heading">{{Group.name}} {{Group.description}}
 <div class="btn-group pull-right">
   <button type="button" class="btn-sm  btn-primary btnAddChallenge" ng-click="goTo('addChallenge')"><i class="glyphicon glyphicon-plus-sign"></i>Add challenge</button>	      
 </div>      
 </div>
-   <div class="panel panel-default" ng-repeat="challange in challanges">
+   <div class="panel panel-info" ng-repeat="challange in challanges">
     <div class="panel-heading">{{challange.name}}</div>
      <div class="panel-body">
       <p>{{challange.description}}</p>
