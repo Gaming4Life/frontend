@@ -2,6 +2,7 @@
 	{
 		"id": 1,
 		"challange_template": 1,
+		"group_id": 2,
 		"date": "2014-09-27",
 		"name": "Prommenera mera!",
 		"description": "Prommenera varje dag, minst 15 minuter.",
@@ -10,9 +11,19 @@
 	{
 		"id": 2,
 		"challange_template": 2,
+		"group_id": 1,
 		"date": "2014-09-15",
 		"name": "Join Non Smoking Generation!",
 		"description": "Gå på alla terapimöten NSG.",
-		"score": 210
+		"score": 100
+	},
+	{
+		"id": 3,
+		"challange_template": 3,
+		"group_id": 2,
+		"date": "2014-08-10",
+		"name": "Walk the Walk!",
+		"description": "Gå 5 KM 3 gånger per vecka .",
+		"score": 150
 	}	
 ]

@@ -2,6 +2,7 @@
 	{
 		"id": 1,
 		"name":"Aromterapi",
+		"group_id": 1,
 		"activity": { "id": 2, "name": "Medverka på 2 sessioner", "intensity": "LOW" },
 		"suitable_group": 2,
 		"type": "GOAL"
@@ -9,6 +10,7 @@
 	{
 		"id": 2,
 		"name":"Rökfri",
+		"group_id": 1,
 		"activity": {"id": 2, "name": "Ingen rökning på 5 veckor", "intensity": "LOW"},
 		"suitable_group": 1,
 		"type":"GOAL"
